@@ -18,7 +18,7 @@ builder.Services.AddControllers();
 builder.Services.AddMvc();
 builder.Services.AddControllers();
 builder.Services.AddDbContext<DBContext>(options => {
-    object value = options.UseSqlServer("Server=DESKTOP-R3EL3KI\\SQLEXPRESS;Database=ApiCRUD;Trusted_Connection=True;");
+    object value = options.UseSqlServer("Server=DESKTOP-IL6RP3E\\SQLEXPRESS;Database=ApiApp;Trusted_Connection=True;");
 });
 
 builder.Services.AddScoped<IUserService, UserManager>();
